@@ -70,7 +70,7 @@ function Home() {
                         <div className="messages">
 
                             {msgs.length ? msgs.map((msg, i) =>
-                                <Message key={i} msg={msg} user1={user1} />) : null}
+                                <Message key={i} msg={msg} user1={user1} check={chat.isOnline} />) : null}
                         </div>
                         <MessageForm handleSubmit={handleSubmit} text={text} setText={setText} />
                     </>
